@@ -7,8 +7,8 @@ Signed update downloads for C6 Smart Home: Windows, Android, and ESP32-C6 Zigbee
 Open the [latest release](https://github.com/mangkron3001-boop/c6-smart-home-updates/releases/latest) and download:
 
 - `C6SmartHome-v5.exe` — Windows app, version 5.0.0.
-- `C6SmartHome-direct.apk` — Android app, version 5.0, Android 8 or later. Install over the previous app using Android's installer.
-- `C6SmartHome-ESP32C6-OTA.bin` — ESP32-C6 application firmware, version 4.0, for the project's **16 MB flash board**.
+- `C6SmartHome-direct.apk` — Android app, version 5.0.1, Android 8 or later. Install over the previous app using Android's installer.
+- `C6SmartHome-ESP32C6-OTA.bin` — ESP32-C6 application firmware, version 4.0.1, for the project's **16 MB flash board**.
 
 ## Update the apps
 
