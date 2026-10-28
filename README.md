@@ -7,8 +7,8 @@ Signed update downloads for C6 Smart Home: Windows, Android, and ESP32-C6 Zigbee
 Open the [latest release](https://github.com/mangkron3001-boop/c6-smart-home-updates/releases/latest) and download:
 
 - `C6SmartHome-v5.exe` — Windows app, version 5.0.0.
-- `C6SmartHome-direct.apk` — Android app, version 5.0.1, Android 8 or later. Install over the previous app using Android's installer.
-- `C6SmartHome-ESP32C6-OTA.bin` — ESP32-C6 application firmware, version 4.0.1, for the project's **16 MB flash board**.
+- `C6SmartHome-direct.apk` — Android app, version 5.1.0, Android 8 or later. Install over the previous app using Android's installer.
+- `C6SmartHome-ESP32C6-OTA.bin` — ESP32-C6 application firmware, version 4.1.0, for the project's **16 MB flash board**.
 
 ## Update the apps
 
@@ -33,3 +33,9 @@ This layout keeps NVS and the existing Zigbee storage at their original offsets.
 After setup, use **ตั้งค่า → อัปเดตเฟิร์มแวร์บอร์ด** in Android, or **ตั้งค่า → อัปเดตแอปและเฟิร์มแวร์บอร์ด → เฟิร์มแวร์ ESP32** on Windows. Choose only the application file `C6SmartHome-ESP32C6-OTA.bin`. Do not upload bootloader, partition-table, or merged images through the OTA page. The page waits for a new boot identifier and a matching running-image hash before reporting success.
 
 The device checks the application image before switching boot slots. Automatic rollback after a firmware logic failure is not enabled. Hardware OTA, long-term Wi-Fi/Zigbee coexistence, and Android installation still require testing on the actual devices; the release has passed build and software-level checks only.
+
+## Easier connection in Android 5.1
+
+Search for the board in home Wi-Fi. Hold BOOT for two seconds to authorize a new phone, then select the board in the app. No IP or connection-code copying. Home Wi-Fi setup is inside the app; hold BOOT eight seconds to change the router without erasing Zigbee pairing. Daily controls are left/right buttons; the example plan is in Settings.
+
+Board LAN/discovery checks and emulator checks are separate from a real-phone trial. The owner phone and complete physical-button/hotspot flow are not yet verified. Router isolation still prevents local control. See the release notes for test scope.
